@@ -1,15 +1,14 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PDF Merger</title>
+    <meta charset="utf-8">
+    <title>Upload PDF Files</title>
 </head>
 <body>
-    <h1>Upload PDFs to Merge</h1>
-    <form action="{{ url_for('upload_files') }}" method="post" enctype="multipart/form-data">
+    <h1>Upload PDF Files</h1>
+    <form action="/upload" method="post" enctype="multipart/form-data">
         <input type="file" name="pdf_files" multiple>
-        <button type="submit">Merge PDFs</button>
+        <input type="submit" value="Upload">
     </form>
 </body>
 </html>
